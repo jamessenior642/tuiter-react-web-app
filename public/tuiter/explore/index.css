@@ -1,0 +1,19 @@
+.wd-body {
+    background-color: black;
+    border: rgb(47,51,54);
+    margin-left: 16px;
+}
+/* part A */
+
+.wd-searchbar {
+    color: white;
+    background-color: darkgray;
+    border-radius: 50px;
+    float: left;
+}
+.wd-gear {
+    float: right;
+    color: white;
+}
+/* part B */
+
