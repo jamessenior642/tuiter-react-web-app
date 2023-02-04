@@ -1,18 +1,18 @@
-body{
+body {
     background-color: black;
     font-family: "Helvetica Neue";
     color: white;
     margin: 20px;
 }
 
-.wd-authordisplay{
+.wd-authordisplay {
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
-.wd-text-author{
+.wd-text-author {
     font-weight: 500;
     margin: 0;
     font-size: 15px;
