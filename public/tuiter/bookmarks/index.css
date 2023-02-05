@@ -1,7 +1,7 @@
 
 .wd-container {
     border: 1px solid rgb(47, 51, 54);
-    margin: 20px;
+    margin: auto;
     max-width: 600px;
 }
 
@@ -122,11 +122,19 @@
     color: rgb(110, 118, 125);
 
 }
+.wd-link-like {
+    color: rgb(255, 56, 85);
+}
 
 .wd-icon {
     padding-right: 12px;
     width: 5px;
-    fill: rgb(110, 118, 125);
+    color: transparent;  text-shadow: 0 0 0 rgb(110, 118, 125);
+}
+.wd-icon-like{
+    padding-right: 12px;
+    width: 5px;
+    color: transparent;  text-shadow: 0 0 0 rgb(255, 56, 85);
 }
 
 
