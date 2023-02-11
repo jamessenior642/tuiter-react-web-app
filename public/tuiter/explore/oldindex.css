@@ -1,0 +1,161 @@
+body {
+    background-color: black;
+    font-family: "Helvetica Neue";
+    color: white;
+    margin: 20px;
+}
+
+/* PART A and B */
+.wd-headsec {
+    border: 1px solid rgb(47, 51, 54);
+}
+
+/* PART A */
+.wd-searchsec {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.wd-searchinput {
+    border-radius: 50px;
+    border-color: rgb(47, 51, 54);
+    background-color: rgb(47, 51, 54);
+    width: 85%;
+    height: 30px;
+    margin-top: 10px;
+    color: white;
+}
+
+.wd-gear {
+    font-size: 250%;
+    color: black;
+    text-decoration-line: none;
+    margin-right: 12px;
+    -webkit-text-stroke: 2px rgb(29, 161, 242);
+}
+
+/* PART B */
+.wd-links {
+    font-size: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.wd-link {
+    padding: 16px;
+    font-weight: bold;
+    color: rgb(110, 118, 125);
+}
+
+.wd-link-active {
+    color: rgb(29, 161, 242);
+    border-bottom: solid 4px rgb(29, 161, 242);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.wd-hr {
+    border: 1px solid rgb(47, 51, 54);
+    height: 12px;
+    background: rgb(47, 51, 54);
+}
+
+
+/* part C Suggested Posts*/
+.wd-subsec {
+    border: 1px solid rgb(47, 51, 54);
+    padding: 16px;
+}
+
+.wd-subsec#science {
+    border-bottom: none;
+}
+
+.wd-subsec#rogan {
+    border-top: none;
+}
+
+.wd-text {
+    font-size: 13px;
+}
+
+.wd-text-thin {
+    color: rgb(110, 118, 125);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-text-bold {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wd-text-author {
+    font-weight: 500;
+    margin: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.wd-ellipsis {
+    color: rgb(110, 118, 125);
+    float: right;
+    vertical-align: top;
+}
+
+/* part D Author Posts*/
+.wd-subsec-img {
+    justify-content: space-between;
+    display: flex;
+}
+
+.wd-textsec {
+    width: 70%;
+}
+
+.wd-authordisplay {
+    display: flex;
+    align-items: center;
+}
+
+.wd-authorimg {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.wd-squareimage {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+/* part E Live*/
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
