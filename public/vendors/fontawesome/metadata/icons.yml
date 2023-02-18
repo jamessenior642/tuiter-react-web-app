@@ -1840,7 +1840,7 @@ blog:
       - log
       - online
       - personal
-      - post
+      - post.js
       - web 2.0
       - wordpress
       - writing
@@ -12051,7 +12051,7 @@ mail-bulk:
       - archive
       - envelope
       - letter
-      - post office
+      - post.js office
       - postal
       - postcard
       - send

@@ -6,9 +6,6 @@
     font-size:.5em;
 }
 
-.active{
-    color: rgb(29, 155, 240);
-}
 
 .fw-bolder{
     margin: 0;
@@ -19,6 +16,12 @@
     width:10px;
     height: 10px;
 }
+
+.wd-titletext{
+    font-size:2.5em;
+}
+
+
 
 
 
