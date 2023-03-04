@@ -6,6 +6,7 @@ const NavigationSidebar = (
     }
 ) => {
     return (
+        <div>
         <div className="list-group">
             <a className="list-group-item">
                 <i className="bi bi-twitter"></i>
@@ -51,6 +52,12 @@ const NavigationSidebar = (
                 <i className="bi bi-three-dots"></i>
                 <span className="d-done d-xl-inline d-none d-sm-none">&nbsp;More</span>
             </a>
+        </div>
+        <div className="d-grid mt-2">
+        <a href="tweet.html"
+           className="btn btn-primary btn-block rounded-pill w-100">
+            Tuit</a>
+        </div>
         </div>
     );
 };
