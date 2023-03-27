@@ -1,0 +1,42 @@
+[{ "_id": 123,
+  "topic": "Space",
+  "userName": "SpaceX",
+  "title": "This is the first default tuit in the list.",
+  "time": "2h",
+  "image": "../images/spacexlogo.jpg" ,
+  "handle": "@spacex",
+  "tuit": " This is the first default tuit in the list.",
+  "likes": 900,
+  "retuits": 700,
+  "liked": true,
+  "comments": 500
+},
+  { "_id": 234,
+    "topic": "Autopilot",
+    "userName": "Tesla",
+    "title": " This is the second default tuit in the list.",
+    "time": "4d",
+    "image": "../images/tesla.jpg",
+    "handle": "@tesla",
+    "tuit": " This is the second default tuit in the list.",
+    "likes": 1000,
+    "retuits": 500,
+    "liked": false,
+    "comments": 10
+
+  },
+  { "_id": 345,
+    "topic": "Software engineering",
+    "userName": "NodeJs",
+    "title": "This is the first default tuit in the list.",
+    "tuit" : " This is the third default tuit in the list.",
+    "likes": 300,
+    "retuits": 100,
+    "liked": false,
+    "comments": 80,
+    "handle": "@nodejs",
+    "time": "10d",
+    "image": "../images/nodejs.jpg"
+
+  }
+]
