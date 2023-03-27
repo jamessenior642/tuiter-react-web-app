@@ -1,27 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
+
 ) => {
+    const {pathname} = useLocation();
+    const active = pathname.split('/')[2];
     return (
+            <>
         <div>
         <div className="list-group">
             <a href="/tuiter" className="list-group-item">
                 <i className="bi bi-twitter"></i>
                 <span className="d-done d-xl-inline d-none d-sm-none">&nbsp;Tuiter</span>
             </a>
-            <a href="/tuiter/home" className={`list-group-item
+            <Link to="/tuiter/home" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
                 <i className="bi bi-house-fill"></i>
                 <span className="d-done d-xl-inline d-none d-sm-none">&nbsp;Home</span>
-            </a>
-            <a href="/tuiter/explore" className={`list-group-item
+            </Link>
+            <Link to="/tuiter/explore" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
                 <i className="bi bi-hash"></i>
                 <span className="d-done d-xl-inline d-none d-sm-none">&nbsp;Explore</span>
-            </a>
+            </Link>
             <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
                 <i className="bi bi-bell-fill"></i>
@@ -59,6 +62,7 @@ const NavigationSidebar = (
             Tuit</a>
         </div>
         </div>
+            </>
     );
 };
 export default NavigationSidebar;
