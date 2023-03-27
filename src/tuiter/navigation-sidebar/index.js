@@ -8,16 +8,16 @@ const NavigationSidebar = (
     return (
         <div>
         <div className="list-group">
-            <a href="/tuiter" className="list-group-item">
+            <a href="/tuiter-old" className="list-group-item">
                 <i className="bi bi-twitter"></i>
                 <span className="d-done d-xl-inline d-none d-sm-none">&nbsp;Tuiter</span>
             </a>
-            <a href="/tuiter/home" className={`list-group-item
+            <a href="/tuiter-old/home" className={`list-group-item
                     ${active === 'home'?'active':''}`}>
                 <i className="bi bi-house-fill"></i>
                 <span className="d-done d-xl-inline d-none d-sm-none">&nbsp;Home</span>
             </a>
-            <a href="/tuiter/explore" className={`list-group-item
+            <a href="/tuiter-old/explore" className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
                 <i className="bi bi-hash"></i>
                 <span className="d-done d-xl-inline d-none d-sm-none">&nbsp;Explore</span>
