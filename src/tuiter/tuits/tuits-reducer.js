@@ -13,7 +13,7 @@ const templateTuit = {
     "topic": "Space",
     "time": "2h",
     "liked": false,
-    "replies": 0,
+    "comments": 0,
     "retuits": 0,
     "likes": 0,
 }
