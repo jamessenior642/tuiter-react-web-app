@@ -11,7 +11,7 @@ const NavigationSidebar = (
             <>
         <div>
         <div className="list-group">
-            <a href="/tuiter" className="list-group-item">
+            <a href="/tuiter/explore" className="list-group-item">
                 <i className="bi bi-twitter"></i>
                 <span className="d-done d-xl-inline d-none d-sm-none">&nbsp;Tuiter</span>
             </a>
