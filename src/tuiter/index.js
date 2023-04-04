@@ -10,12 +10,11 @@ import whoReducer from "./reducers/who-reducer";
 import { Routes, Route } from "react-router-dom";
 
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 
 function Tuiter() {
     return (
         <Provider store={store}>
-
             <div className="row mt-2">
                 <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                     <NavigationSidebar active="explore" />

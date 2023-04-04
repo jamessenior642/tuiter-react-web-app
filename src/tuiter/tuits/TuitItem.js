@@ -1,54 +1,32 @@
 import React from "react";
+import TuitStats from "./TuitStats";
 import {useDispatch} from "react-redux";
-import {deleteTuit, updateTuitLikes} from "./tuits-reducer";
+import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
-const TuitItem = (
-    {
-        tuit = {
-            "userName": "SpaceX",
-            "handle": "@spacex",
-            "time": "2h",
-            "title": "",
-            "image": "spacex.jpg",
-            "comments": 123,
-            "retuits": 432,
-            "likes": 2345,
-            "liked": false
-        }
-    }
 
-) => {
-
+const TuitItem = ({tuit}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
-    }
-    const likeUpdateHandler = (id) => {
-        dispatch(updateTuitLikes(id));
-    }
+        dispatch(deleteTuitThunk(id));}
+
     return(
         <li className="list-group-item">
-            <div className="row">
+            <div className="row mb-1">
                 <div className="col-1">
-                    <img width={40} className="float-left rounded-circle" alt = "description" src={`/images/${tuit.image}`}/>
+                    <img width={40} className="float-left rounded-circle" src={`/images/${tuit.image}`} alt=""/>
                 </div>
-                <div className="col-11">
-                    <div><span className = "fw-bolder"> {tuit.userName } </span> <i className="bi bi-patch-check-fill"> </i> {tuit.handle} . {tuit.time}
-                        <i className="bi bi-x-lg float-end"
-                           onClick={() => deleteTuitHandler(tuit._id)}></i></div>
+                <div className="col-10">
+                    <i className="bi bi-x-lg float-end"
+                       onClick={() => deleteTuitHandler(tuit._id)}></i>
+                    <div><span className="fw-bold">{tuit.userName}</span>
+                        <i className="bi bi-patch-check-fill text-primary m-1"></i> {tuit.handle} . {tuit.time}</div>
                     <div>{tuit.tuit}</div>
-
-                <div className="row">
-                    <span className="col-3"><i className="bi bi-chat"></i> {tuit.comments}</span>
-                    <span className="col-3"><i className="bi bi-arrow-repeat"></i>
-                        { tuit.retuits }</span>
-                    <span className="col-3" >
-                <i className={`bi bi-heart${tuit.liked ? '-fill text-danger' : ''}`} onClick={() => likeUpdateHandler(tuit._id)}></i>
-                        {tuit.likes}</span>
-                    <span className="col-3"> <i className="bi bi-share"></i></span>
-                </div>
                 </div>
             </div>
+            <TuitStats
+                key={tuit._id}
+                tuit={tuit}/>
         </li>
     );
 };
