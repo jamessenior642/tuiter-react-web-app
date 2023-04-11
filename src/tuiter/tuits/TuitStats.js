@@ -6,10 +6,6 @@ import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
-    // const toggleLikeHandler = () => {
-    //     dispatch(toggleLike(tuit))
-    // }
-
 
     return(
         <div className="row justify-content-center">

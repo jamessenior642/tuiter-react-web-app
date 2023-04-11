@@ -1,4 +1,3 @@
-
 import { createSlice } from "@reduxjs/toolkit";
 import tuits from './tuits.json';
 import {findTuitsThunk, deleteTuitThunk, createTuitThunk, updateTuitThunk}
@@ -12,7 +11,7 @@ const initialState = {
 const currentUser = {
     "userName": "NASA",
     "handle": "@nasa",
-    "image": "nasa.jpg",
+    "image": "nasa-icon.png",
 };
 
 // eslint-disable-next-line no-unused-vars
@@ -74,7 +73,6 @@ const tuitsSlice = createSlice({
 
 
     reducers: {
-
     }
 });
 export const {toggleLike, createTuit, deleteTuit} = tuitsSlice.actions

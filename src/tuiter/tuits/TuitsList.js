@@ -29,4 +29,4 @@ const TuitList = () => {
         </ul>
     );
 };
-export default TuitList;;
+export default TuitList;

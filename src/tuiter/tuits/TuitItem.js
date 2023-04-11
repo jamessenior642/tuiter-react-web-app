@@ -1,7 +1,6 @@
 import React from "react";
 import TuitStats from "./TuitStats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 
@@ -14,7 +13,7 @@ const TuitItem = ({tuit}) => {
         <li className="list-group-item">
             <div className="row mb-1">
                 <div className="col-1">
-                    <img width={40} className="float-left rounded-circle" src={`/images/${tuit.image}`} alt=""/>
+                    <img width={40} className="float-left rounded-circle" src={`images/${tuit.image}`} alt=""/>
                 </div>
                 <div className="col-10">
                     <i className="bi bi-x-lg float-end"
