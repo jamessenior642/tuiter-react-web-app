@@ -9,5 +9,5 @@ export default [
     {   title: 'Walk the dog', status: 'DEFERRED',
         done: false,
     },
-];
-
+ ];
+ 

@@ -1,12 +1,13 @@
-/* 3.1.3 */
-/*p {*/
-/*    background-color: blue;*/
-/*    color: white;*/
-/*}*/
-p#id-selector-1 {
+/* p {
+    background-color: blue;
+    color: white;
+ } */
+
+ p#id-selector-1 {
     background-color: red;
     color: white;
 }
+
 p#id-selector-2 {
     background-color: yellow;
     color: black;
@@ -16,17 +17,16 @@ p#id-selector-2 {
     background-color: yellow;
     color: blue;
 }
-
+   
 .selector-1 .selector-3 {
     background-color: red;
     color: white;
-}
-
+ }
 .selector-2 > .selector-3 > .selector-4 {
     background-color: yellow;
     color: blue;
-}
-
+ }
+ 
 .fg-color-black { color: black; }
 .fg-color-white { color: white; }
 .fg-color-blue { color: #7070ff; }
@@ -47,29 +47,37 @@ p#id-selector-2 {
 }
 
 .border-fat {
-    border-width: 20px 30px 20px 30px; }
+    border-width: 20px 30px 20px 30px;
+}
 .border-thin {
-    border-width: 4px; }
+    border-width: 4px;
+}
 .border-solid {
-    border-style: solid; }
+    border-style: solid;
+}
 .border-dashed {
-    border-style: dashed; }
+    border-style: dashed;
+}
 .border-yellow {
-    border-color: #ffff07; }
+    border-color: #ffff07;
+}
 .border-red {
-    border-color: #ff7070; }
+    border-color: #ff7070;
+}
 .border-blue {
-    border-color: #7070ff; }
-
+    border-color: #7070ff;
+}
 
 .padded-top-left {
     padding-top: 50px;
     padding-left: 50px;
 }
+
 .padded-bottom-right {
     padding-bottom: 50px;
     padding-right: 50px;
 }
+
 .padding-fat {
     padding: 50px;
 }
@@ -147,7 +155,8 @@ p#id-selector-2 {
 .pos-absolute-120-20 {
     position: absolute;
     top: 20px;
-    left: 120px;      }
+    left: 120px;      
+}
 
 .pos-fixed {
     position: fixed;
@@ -180,6 +189,7 @@ p#id-selector-2 {
     width: 50%;
     float: left;
 }
+
 .grid-col-third-page {
     width: 33%;
     float: left;
@@ -205,9 +215,4 @@ p#id-selector-2 {
     float: left;
 }
 
-
-
-
-
-
-
+ 

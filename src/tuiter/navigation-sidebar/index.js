@@ -1,70 +1,70 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
-import { setNav } from "../reducers/nav-reducer";
+import { setNav } from "../reducers/navigation-reducer";
 // import NavigationItem from "./navigation-item";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 const NavigationSidebar = () => {
-    // const NavigationTabs = ['Home', 'Explore', 'Notifications', 'Messages', 'Bookmarks', 'Lists', 'Profile', 'More']
+  // const NavigationTabs = ['Home', 'Explore', 'Notifications', 'Messages', 'Bookmarks', 'Lists', 'Profile', 'More']
 
-    const active = useSelector(state => state.nav);
-    const dispatch = useDispatch();
-    const handleNavClick = () => {
-        dispatch(setNav("Home"))
-    };
-    const handleNavClick2 = () => {
-        dispatch(setNav("Explore"))
-    };
+  const active = useSelector(state => state.nav);
+  const dispatch = useDispatch();
+  const handleNavClick = () => {
+    dispatch(setNav("Home"))
+  };
+  const handleNavClick2 = () => {
+    dispatch(setNav("Explore"))
+  };
 
-    return (
-        <div className="list-group">
-            <div className="list-group-item">Tuiter</div>
+ return (
+   <div className="list-group">
+     <div className="list-group-item">Tuiter</div>
+    
+    {/* {NavigationTabs.map(nav => NavigationItem(nav))} */}
 
-            {/* {NavigationTabs.map(nav => NavigationItem(nav))} */}
-
-            <div className={`list-group-item
+     <div className={`list-group-item
                     ${active === 'Home'?'active':''}`}
-                 onClick={handleNavClick}
-            >
-                Home
-            </div>
-            <div className={`list-group-item
+                    onClick={handleNavClick}
+                    >
+       Home 
+     </div>
+     <div className={`list-group-item
                     ${active === 'Explore'?'active':''}`}
-                 onClick={handleNavClick2}
-            >
-                Explore
-            </div>
-            <div className={`list-group-item
+                    onClick={handleNavClick2}
+                    >
+       Explore
+     </div>
+     <div className={`list-group-item
                     ${active === 'notifications'?'active':''}`}
-            >
-                Notifications
-            </div>
-            <div className={`list-group-item
+                    >
+       Notifications
+     </div>
+     <div className={`list-group-item
                     ${active === 'messages'?'active':''}`}
-            >
-                Messages
-            </div>
-            <div className={`list-group-item
+                    >
+       Messages
+     </div>
+     <div className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}
-            >
-                Bookmarks
-            </div>
-            <div className={`list-group-item
+                    >
+       Bookmarks
+     </div>
+     <div className={`list-group-item
                     ${active === 'lists'?'active':''}`}
-            >
-                Lists
-            </div>
-            <div className={`list-group-item
+                    >
+       Lists
+     </div>
+     <div className={`list-group-item
                     ${active === 'profile'?'active':''}`}
-            >
-                Profile
-            </div>
-            <div className={`list-group-item
+                    >
+       Profile
+     </div>
+     <div className={`list-group-item
                     ${active === 'more'?'active':''}`}
-            >
-                More
-            </div>
-        </div>
-    );
+                    >
+       More
+     </div>
+   </div>
+ );
 };
 export default NavigationSidebar;
