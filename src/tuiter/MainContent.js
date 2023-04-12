@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import ExploreComponent from "./explore";
 import HomeComponent from "./home";
 
-const Main = () => {
+const MainContent = () => {
   const activeNav = useSelector(state => state.nav);
   return (
     <div>
@@ -12,4 +12,4 @@ const Main = () => {
     </div>
   );
 }
-export default Main
+export default MainContent

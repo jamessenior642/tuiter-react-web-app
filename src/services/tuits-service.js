@@ -10,19 +10,20 @@ export const findTuits = async () => {
     const tuits = response.data;
     return tuits;
 }
-
+   
 export const deleteTuit = async (tid) => {
     const response = await axios.delete(`${TUITS_API}/${tid}`);
     return response.data;
 }
-
+  
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
     return response.data;
 }
-
-export const updateTuit = async (tuit) => { // eslint-disable-next-line
+   
+export const updateTuit = async (tuit) => { // eslint-disable-next-line 
     const response = await axios
-        .put(`${TUITS_API}/${tuit._id}`, tuit);
+      .put(`${TUITS_API}/${tuit._id}`, tuit);
     return tuit;
 }
+  

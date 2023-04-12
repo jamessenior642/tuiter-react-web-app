@@ -12,7 +12,7 @@ export default [
         userName: 'Virgin Galactic',
         handle: '@virgingalactic',
     },
-    {   avatarIcon: '../images/nasa-icon.png',
+    {   avatarIcon: '../images/nasa-icon.png', 
         userName: 'NASA',
         handle: '@NASA',
     },

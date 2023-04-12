@@ -6,13 +6,13 @@ import navReducer from "./reducers/navigation-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-import Main from "./Main";
+import MainContent from "./MainContent";
 
 
 const store = configureStore(
   {reducer:
     { who: whoReducer,
-      tuits: tuitsReducer,
+      tuitsData: tuitsReducer,
       nav: navReducer,
     }
   }
@@ -27,7 +27,7 @@ function Tuiter() {
       </div>
       <div className="col-10 col-md-10 col-lg-7 col-xl-6"
             style={{"position": "relative"}}>
-            <Main/>
+            <MainContent/>
       </div>
       <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
         <WhoToFollowList/>
